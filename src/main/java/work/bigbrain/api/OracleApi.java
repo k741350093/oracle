@@ -37,7 +37,7 @@ public class OracleApi {
                 "disabledPeriodicSync": false,  
                 "dataSourceConfigUiUri": "https://www.bigbrain.work/oracle_sync/index.html",  
                 "initHeight": 650,  
-                "initWidth": 600  
+                "initWidth": 750  
             },  
             "protocol": {  
                 "type": "http",  
