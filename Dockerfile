@@ -1,4 +1,4 @@
-FROM crpi-bquedaa9y4amn71x.cn-hangzhou.personal.cr.aliyuncs.com/k741350093/openjdk:19-ea-buster
+FROM eclipse-temurin:21-jdk-alpine
 
 # 设置工作目录
 WORKDIR /app
@@ -8,7 +8,9 @@ COPY target/oracle-1.0.0.jar app.jar
 
 # 设置时区为亚洲/上海
 ENV TZ=Asia/Shanghai
-RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
+RUN apk add --no-cache tzdata && \
+    ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
+    echo $TZ > /etc/timezone
 
 # 设置编码和Java启动参数
 ENV LANG=C.UTF-8
