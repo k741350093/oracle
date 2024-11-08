@@ -1,4 +1,4 @@
-FROM eclipse-temurin:21-jdk-alpine
+FROM crpi-bquedaa9y4amn71x.cn-hangzhou.personal.cr.aliyuncs.com/k741350093/openjdk:21-ea-slim
 
 # 设置工作目录
 WORKDIR /app
