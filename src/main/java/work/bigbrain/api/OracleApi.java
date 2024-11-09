@@ -19,7 +19,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 @Controller
-@RequestMapping("/oracle")
+@RequestMapping("/oracle-connector")
 public class OracleApi {
     private static Log log = LogFactory.getLog(OracleApi.class);
 
