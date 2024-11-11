@@ -9,7 +9,16 @@ spring:
     exclude:
       - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
       - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
+  web:
+    resources:
+      # 添加静态资源配置
+      static-locations: classpath:/static/dist/
+      chain:
+        strategy:
+          content:
+            enabled: true
+            paths: /**
 
 # 日志配置
 logging:
-    config: classpath:log4j2.xml
+  config: classpath:log4j2.xml

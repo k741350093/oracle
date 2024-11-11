@@ -1,0 +1,197 @@
+.container {
+    position: relative;
+    padding: 0 24px 0px 24px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-item {
+    margin-bottom: 12px;
+}
+
+.form-item label {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-item input,
+.form-item select,
+.password-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+}
+
+.button-group {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+.button-group button {
+    margin: 0;
+}
+
+button {
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+    background: #fff;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background: #1890ff;
+    color: white;
+    border-color: #1890ff;
+}
+
+.message {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    display: none;
+}
+
+.message.success {
+    background: #f6ffed;
+    border: 1px solid #b7eb8f;
+    color: #52c41a;
+}
+
+.message.error {
+    background: #fff2f0;
+    border: 1px solid #ffccc7;
+    color: #ff4d4f;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-disabled {
+    background-color: #cccccc;
+    border-color: #cccccc;
+    color: #666666;
+    cursor: not-allowed;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.btn-disabled:hover {
+    background-color: #cccccc;
+    border-color: #cccccc;
+}
+
+.trial-notice {
+    background-color: #f0f9ff;
+    border: 1px solid #bae6fd;
+    border-radius: 8px;
+    padding: 8px 16px;
+    margin: 8px auto 8px;
+    max-width: 600px;
+    color: #0369a1;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.footer {
+    margin-top: 12px;
+    padding: 8px;
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    border-top: 1px solid #eee;
+}
+
+.footer a {
+    color: #0369a1;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* 添加密码输入框容器样式 */
+.password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    flex: 1;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 8px;
+    padding: 4px 8px;
+    background: none;
+    border: none;
+    color: #0369a1;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.toggle-password:hover {
+    color: #0056b3;
+}
+
+h2 {
+    margin: 4px 0 12px;
+}
+
+/* 添加必填标记样式 */
+.required::before {
+    content: '*';
+    color: #ff4d4f;
+    margin-right: 4px;
+}
+
+/* 返回按钮宽度为1/5 */
+#backBtn {
+    flex: 1;
+}
+
+/* 完成配置按钮宽度为3/5 */
+#finishBtn {
+    flex: 3;
+}
+
+/* 修改第一个页面的按钮组样式 */
+#connection-form .button-group {
+    width: 100%;
+}
+
+#connection-form .button-group button {
+    width: 100%;
+}
+
+/* 第二个页面的按钮组保持原样 */
+#table-form .button-group {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+}
+
+#table-form #backBtn {
+    flex: 1;
+}
+
+#table-form #finishBtn {
+    flex: 3;
+}
